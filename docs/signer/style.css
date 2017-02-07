@@ -1,0 +1,161 @@
+body{
+	background-color: #D3D3D3;
+}
+
+.jumbotron{
+	background-color: white;
+}
+
+#step_b, #step_c, #step_d{
+	display: none;
+}
+
+#pki{
+	display: block;
+	margin: 0 auto;
+	height: 300px;
+}
+
+
+#step-b h1 span{
+	font-size: 8px;
+}
+
+#steb-b-success{
+	display: none;
+	margin: 0 auto;
+}
+
+
+#steb-b-cancel{
+	display: none;
+	margin: 0 auto;
+}
+
+
+#steb-b-success img{
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+}
+
+#steb-b-cancel img{
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+}
+
+#steb-b-cancel{
+	display: none;
+}
+
+
+#start-validation{
+
+}
+
+#continue_to_step_c{
+	float: right;
+	margin-top: -60px;
+}
+
+
+#service-object{
+	width: 0px;
+	height: 0px;
+
+}
+
+#step-b-valid-btn{
+	float: right;
+	margin-top: -60px;
+
+}
+
+#continue_to_step_c{
+	display: none;
+}
+
+#onsucces{
+	display: none;
+}
+
+#onerror{
+	display: none;
+}
+
+#step-c-finish{
+	float: right;
+
+}
+
+#finish-cancel{
+	display: none;
+}
+
+#service-img{
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+#finish-sucess{
+	display: none;
+}
+
+#finish-error{
+	display: none;
+}
+
+
+
+.arrow-bg{
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	top:0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+.arrow-bg #arrow{
+	position: absolute;
+	right: 400px;
+	bottom: 20px;
+	height: 250px;
+}
+
+
+#customerLabel{
+	font-weight: bold;
+}
+
+#finish-sucess img {
+	display: block;
+	height: 200px;
+	margin: 0 auto 20px;
+
+}
+
+#close{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#tableDiv{
+	width: 700px;
+	}
+	
+table, th, td{
+	border: 0px!important;
+	/*font-size: 16px!important;*/
+	padding-left:0px;
+	margin-bottom: 15px;
+    font-size: 21px;
+
+}
+	
+	

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Página de prueba</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	
+	<div class="container">
+
+
+      <div id="jumbo" class="jumbotron">
+
+       <h3 class="text-muted"><img src="../img/bacredomatic_logo.png"/></h3>
+       <br/>
+       	
+	      <div id="step_a">
+	      	    <h2>Verificación de funcionamiento de la tarjeta</h2>
+		        <p class="lead">En este paso usted firmará digitalmente el texto mostrado a continuación.<br>
+		          Para esto se le solicitará que seleccione su Certificado Digital y digite el PIN de su tarjeta.<br>
+	            Para realizar su Firma Digital presione el botón 'Firmar'.<br />
+<br/>
+                </p>
+		        <div class="form-group">
+		          <p class="lead">Información a firmar:</p>
+  <textarea class="form-control" rows="5" id="signComment">Yo he visitado el Sitio Web de validación de firma digital del BAC San José. Este documento tiene como único fin la realización de una prueba y su contenido es meramente ilustrativo.</textarea>
+</div>
+		        <p><a id="start-sign" class="btn btn-lg btn-success" href="#" role="button">Firmar</a></p>
+                
+                
+        </div>
+
+	      <div id="step_b">
+	      	     <h2>Verificación de funcionamiento de la tarjeta</h2>
+	      	     <br />
+		        <br />
+	      	     <p id="steb-b-message" class="lead"><strong>El proceso de firma Digital se ha realizado exitosamente. Su tarjeta funciona correctamente.</strong>
+
+</p>
+ <p id="" class="lead">
+La gestión que acaba de realizar es equivalente a la realización de una firma manuscrita sobre papel. Retire su tarjeta y presione el botón 'Finalizar'
+</p>
+
+ <p id="" class="lead">
+Información de su Certificado Digital de Firma</p>
+
+<p id="" class="lead">
+
+</p>
+<div id="tableDiv">
+<table class="table" id="tableCertInfo">
+    <tbody>
+      <tr>
+        <td><strong>Texto firmado digitalmente</strong></td>
+        <td>
+        <textarea class="form-control" rows="5" id="signedComment"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Su nombre completo es</strong></td>
+        <td id="customerName"></td>
+      </tr>
+      <tr>
+        <td><strong>Su número de identificación es</strong></td>
+        <td id="customerId"></td>
+      </tr>
+      <tr>
+        <td><strong>Su tipo de identificación es</strong></td>
+        <td id="customerIdType"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+		        
+		      	 <div id="arrow-bg-b" class="arrow-bg">
+		      		<img id="arrow" src="../img/arrow.png"/> 
+		      	</div>
+		      	<div id="steb-b-cancel">
+		      		<p>Ha cancelado el proceso de validación</p>
+		      		<img src="../img/Wrong.png"><br/>
+		      		<a id="retry-cancel" class="btn btn-lg btn-info" href="#" role="button">Reiniciar validación</a>
+		      	</div>
+		         <a id="step-b-valid-btn" class="btn btn-lg btn-success" href="#" role="button">Finalizar</a>
+
+	      </div>
+
+	      <div id="step_c">
+	      	<h2>Paso 2 de 2 - Validación de firma digital</h2>
+		        <br />
+		        <br />
+	      	<p>Por favor no desconecte su dispositivo lector o tarjeta, validaremos que podemos acceder a su firma digital.</p>
+	      	<p>Tome en cuenta que se le solicitará el pin de su tarjeta.</p>
+	      	<p></p>
+	      	<div id="arrow-bg-c" class="arrow-bg">
+	      		<img id="arrow" src="../img/arrow.png"/> 
+	      	</div>
+	      	<br/>
+
+	      	<a id="step-c-finish" class="btn btn-lg btn-success" href="#" role="button">Aceptar y continuar</a>
+	      	<br/>
+	      </div>
+
+	      <div id="step-finish">
+	      	<div id="finish-error">
+	      		<h2>Error</h2>
+	      		<p>Parece que algo no ha ido bien con el proceso de firmado digital. Por favor contacte a soporte técnico</p>
+	      		<a id="step-c-retry-error" class="btn btn-lg btn-warning" href="#" role="button">Intentar de nuevo</a>
+	      	</div>
+	      	<div id="finish-cancel">
+	      		<h2>Cancelado</h2>
+	      		<p>Ha cancelado el proceso de firmado digital.</p>
+	      		<a id="step-c-retry-cancel" class="btn btn-lg btn-info" href="#" role="button">Reiniciar firmado</a>
+	      	</div>
+
+
+	      </div>
+   		
+      </div>
+
+   
+	</div>
+
+	<script type="text/javascript" src="../lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../lib/BrowserUtils.js"></script>
+	<script type="text/javascript" src="../lib/stapes.min.js"></script>
+	<script type="text/javascript" src="../lib/bacdesktop.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

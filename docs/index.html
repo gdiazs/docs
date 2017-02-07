@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Autor: gdiazs -->
+	<meta charset="utf-8">
+	<title>Página de prueba</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	
+	<div class="container">
+
+
+      <div id="jumbo" class="jumbotron">
+
+       <h3 class="text-muted"><img src="img/bacredomatic_logo.png"/></h3>
+       <br/>
+       	
+	      <div id="step_a">
+	      	    <h1>Bienvenido</h1>
+		        <p class="lead">Gracias por instalar BAC Firma de BAC|CREDOMATIC. Antes de empezar a utilizar el BAC Firma, queremos validar que la instalación fue exitosa. </p>
+		        <br />
+		        <br />
+		        <p> Por favor haga clic en "Iniciar validación" y siga las instrucciones de cada paso </p>
+		        <br/>
+		        <p><a id="start-validation" class="btn btn-lg btn-success" href="#" role="button">Iniciar validación</a></p>
+	      </div>
+
+	      <div id="step_b">
+	      	     <h2>Paso 1 de 2 - Validación de BAC Firma</h2>
+	      	     <br />
+		        <br />
+	      	     <p id="steb-b-message" class="lead">Por favor conecte su lectora de tarjetas e introduzca su firma digital y haga clic en el botón de validar</p>
+		         <img src="img/pki.gif" id="pki"/>
+		      	 <div id="arrow-bg-b" class="arrow-bg">
+		      	 	<img id="arrow-inverse" src="img/arrow-inverse.png"/> 
+		      		<img id="arrow" src="img/arrow.png"/> 
+		      	</div>
+		      	<div id="steb-b-cancel">
+		      		<p>Ha cancelado el proceso de validación</p>
+		      		<img src="img/Wrong.png"><br/>
+		      		<a id="retry-cancel" class="btn btn-lg btn-info" href="#" role="button">Reiniciar validación</a>
+		      	</div>
+		         <a id="step-b-valid-btn" class="btn btn-lg btn-success" href="#" role="button">Validar</a>
+
+	      </div>
+
+	      <div id="step_c">
+	      	<h2>Paso 2 de 2 - Validación de firma digital</h2>
+		        <br />
+		        <br />
+	      	<p>Por favor no desconecte su dispositivo lector o tarjeta, validaremos que podemos acceder a su firma digital.</p>
+	      	<p>Tome en cuenta que se le solicitará el pin de su tarjeta.</p>
+	      	<p></p>
+	      	<div id="arrow-bg-c" class="arrow-bg">
+					<img id="arrow-inverse-c" src="img/arrow-inverse.png"/> 
+		      		<img id="arrow-c" src="img/arrow.png"/> 
+	      	</div>
+	      	<br/>
+
+	      	<a id="step-c-finish" class="btn btn-lg btn-success" href="#" role="button">Aceptar y continuar</a>
+	      	<br/>
+	      </div>
+
+	      <div id="step-finish">
+	      	<div id="finish-error">
+	      		<h1>Error</h1>
+	      		<p>Parece que algo no fue bien en la instalación o configuración. Por favor contacte a soporte técnico</p>
+	      		<a id="step-c-retry-error" class="btn btn-lg btn-success" href="#" role="button">Intentar de nuevo</a>
+	      	</div>
+	      	<div id="finish-cancel">
+	      		<h1>Cancelado</h1>
+	      		<p>Ha cancelado el proceso de validación</p>
+	      		<a id="step-c-retry-cancel" class="btn btn-lg btn-info" href="#" role="button">Reiniciar validación</a>
+	      	</div>
+
+	      	<div id="finish-sucess">
+
+	      		<p>El proceso de validación ha sido exitoso, gracias <span id="customerLabel"></span> por instalar BAC Firma.</p>
+	      		<img src="img/Success.png">	
+	      		<p>Puede cerrar esta pestaña del navegador.</p>
+
+	      	</div> 
+
+	      </div>
+   		
+      </div>
+
+   
+	</div>
+
+	<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/stapes.min.js"></script>
+	<script type="text/javascript" src="lib/BrowserUtils.js"></script>
+	<script type="text/javascript" src="lib/bacdesktop.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
